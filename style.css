@@ -241,6 +241,11 @@ body {
 /* ====================================== */
 
 @media screen and (max-width: 768px) {
+
+  .container{
+    height: 90vh;
+  }
+
   .phoneWrapper {
     width: 100%;
   }
