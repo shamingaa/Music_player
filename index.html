@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mp3 Player</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <audio src="./aud/song1.mp3"></audio>
+
+    <div class="container">
+      <div class="phoneWrapper">
+        <!-- ========= Phone Case ============= -->
+        <div class="phone">
+          <div class="titles">
+            <h2 id="musicTitle">Toosie Slide</h2>
+            <h3 id="musicArtiste">Drake</h3>
+          </div>
+
+          <!-- #31BCCC -->
+
+          <!-- Music Display -->
+          <div class="displayWrapper">
+
+            <!-- Monitor Wrapper -->
+            <div class="monitorWrapper">
+              <div class="volumeKeysDiv">
+                <span class="volumeButton" id="decreaseVolume">&minus;</span>
+                <span class="volumeButton" id="increaseVolume">&plus;</span>
+              </div>
+
+              <div class="monitor">
+                <img src="./img/waveIcon.png" alt="audio wave" id="audioWave" />
+              </div>
+            </div>
+
+            <div class="volume">
+              <div class="volumeMonitor">100%</div>
+              <div class="soundButton">
+                <img src="./img/volume.png" alt="volume icon" id="volumeIcon" />
+              </div>
+            </div>
+          </div>
+
+          <!-- Track Timeline -->
+          <input type="range" class="timeline" max="100" value="0" />
+
+          <!-- Controle Buttons -->
+          <div class="controlButtons">
+            <button class="nextButton btn" id="prev">
+              <img src="./img/back.png" alt="" />
+            </button>
+
+            <button class="mainButton btn" id="playButton">
+              <img src="./img/play.png" alt="" />
+            </button>
+
+            <button class="nextButton btn" id="next">
+              <img src="./img/next.png" alt="" />
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="./main.js"></script>
+</html>

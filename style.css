@@ -1,0 +1,251 @@
+html {
+  font-size: 10px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: "Roboto", sans-serif;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(4deg, #000, #2d2d31, #22252fb5);
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.phoneWrapper {
+  width: 50%;
+  height: 60rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.phone {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  height: 95%;
+  width: 45%;
+  border-radius: 3rem;
+  background-image: linear-gradient(243deg, #a2a8b361, #aab4bd, #bdc7cf, #fff);
+  box-shadow: 10px 20px 20px 4px #000;
+}
+
+.titles {
+  margin-top: 10rem;
+  color: rgb(41, 42, 44);
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.displayWrapper {
+  margin-top: 5rem;
+  display: flex;
+  align-items: center;
+}
+
+.monitorWrapper {
+  position: relative;
+  margin-left: 4rem;
+  border-radius: 100%;
+  box-shadow: -10px -1rem 3rem 0px #d7fbf9;
+}
+
+.volumeKeysDiv {
+  width: 12rem;
+  height: 12rem;
+  border-radius: 100%;
+  border: 0.2rem solid #66666b;
+  background-color: #000000d1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0.5rem 2rem 3rem 0px #3b243df3;
+  z-index: 10;
+}
+
+.monitor {
+  width: 8rem;
+  height: 8rem;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 5;
+}
+
+#audioWave {
+  width: 40%;
+}
+
+.volumeButton {
+  color: #31bccc;
+  font-size: 1.3rem;
+  cursor: pointer;
+  font-weight: 600;
+  padding: 0.7rem;
+}
+
+/* ================ Volume Section ======================== */
+.volume {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 2rem;
+}
+
+.volumeMonitor {
+  width: 2.9rem;
+  height: 2.9rem;
+  background-color: #000000a8;
+  font-size: 0.9rem;
+  font-weight: 500;
+  /* padding-top: 0.6rem; */
+  color: #31bccc;
+  border-radius: 100%;
+  box-shadow: inset 0 0.3rem #000;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.volumeMonitor::before,
+.volumeMonitor::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.volumeMonitor::after {
+  width: 100%;
+  height: 100%;
+  border-radius: 100%;
+  box-shadow: 0 0.3rem 0.3rem 0 #dddd;
+}
+
+#volumeIcon {
+  width: 2rem;
+  margin-top: 0.5rem;
+  cursor: pointer;
+}
+
+/* =============== Track Timeline ====================== */
+.timeline {
+  -webkit-appearance: none;
+  margin-top: 3rem;
+  height: 0.5rem;
+  background-color: #2d2d31;
+  background-size: 0% 100%;
+  background-image: linear-gradient(30deg, #0471b9, #00fff8);
+  border-radius: 0.5rem;
+  background-repeat: no-repeat;
+  box-shadow: inset 2px 1px 3px;
+}
+
+.timeline::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 1em;
+  height: 1em;
+}
+
+/* =============== Buttons =========================== */
+.controlButtons {
+  margin-top: 5em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 70%;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border: none;
+  border-radius: 100%;
+  border: 0.2rem solid rgb(105, 107, 109);
+  background-color: #000000d1;
+}
+
+.mainButton {
+  width: 5.7rem;
+  height: 5.7rem;
+  border-radius: 100%;
+  box-shadow: 7px 10px 15px 0px #141623b5;
+  position: relative;
+}
+
+.mainButton::before,
+.mainButton::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.mainButton::after {
+  width: 100%;
+  height: 100%;
+  border-radius: 100%;
+  box-shadow: -6px -7px 11px 0px #d7fbf9;
+}
+
+.nextButton {
+  width: 4.5rem;
+  height: 4.5rem;
+  box-shadow: 7px 10px 15px 0px #3b243df3;
+  position: relative;
+}
+
+.nextButton::after,
+.nextButton::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.nextButton::after {
+  width: 100%;
+  height: 100%;
+  border: none;
+  border-radius: 100%;
+  box-shadow: -6px -7px 11px 0px #d7fbf9;
+}
+/* ====================================== */
+
+@media screen and (max-width: 768px) {
+  .phoneWrapper {
+    width: 100%;
+  }
+
+  .phone {
+    width: 84%;
+  }
+}
