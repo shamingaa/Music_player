@@ -38,7 +38,7 @@ const track = { value: 0 };
 
 // ========== All Songs ==============
 const songs = [
-  { url: "aud/song1.mp3", artiste: "Runtown", title: "Happen for Lagos" },
+  { url: "https://www.xclusiveloaded.com/wp-content/uploads/2020/12/Runtown_-_If_E_Happen_For_Lagos.mp3", artiste: "Runtown", title: "Happen for Lagos" },
   { url: "aud/song2.mp3", artiste: "Harry Styles", title: "As it was" },
 ];
 
